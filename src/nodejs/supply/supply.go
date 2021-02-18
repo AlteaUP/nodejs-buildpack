@@ -741,6 +741,7 @@ else
 fi
 export PATH=$PATH:"$HOME/bin":$NODE_PATH/.bin
 export LD_LIBRARY_PATH=/home/vcap/app/sap/nwrfcsdk/lib/
+export SAPNWRFC_HOME=/home/vcap/app/sap/nwrfcsdk
 `
 	return s.Stager.WriteProfileD("node.sh",
 		fmt.Sprintf(scriptContents,
